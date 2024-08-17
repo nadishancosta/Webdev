@@ -10,6 +10,8 @@
         <button id="myButton">Change Text</button>
         <p id="secondparagraph">JavaScript is ...</p>
         <button id="my2Button">Append Text</button>
+        <p id="contentpara"></p>
+        <button id="contentButton">Append Text</button>
         <script type="text/javascript">
             //Wussup
             var changetxt = document.getElementById("secondparagraph").innerHTML
@@ -19,6 +21,9 @@
             }
             document.getElementById("my2Button").onclick = function(){
                 document.getElementById("secondparagraph").innerHTML = "I think "+changetxt+ " Confusing!";
+            }
+            document.getElementById("contentButton").onclick = function(){
+                document.getElementById("contentpara").innerHTML = "Here I am! This is Me!";
             }
         </script>
     </body>
