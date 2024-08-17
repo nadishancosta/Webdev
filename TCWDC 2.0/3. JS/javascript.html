@@ -7,9 +7,14 @@
     </head>
     <body>
         <p id="text">Hello World!</p>
+        <button id="myButton">Change Text</button>
         <script type="text/javascript">
             //Wussup
-            document.getElementById("text").innerHTML = "Hello Costa!";
+            
+            // document.getElementById("text").innerHTML = "Hello Costa!";
+            document.getElementById("text").onclick = function(){
+                document.getElementById("text").innerHTML = "Hello Costa!";
+            }
         </script>
     </body>
 </html>
