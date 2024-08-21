@@ -11,8 +11,10 @@
 
         <p id = "target">This is some text!</p>
         <script type="text/javascript">
+            var textchange = ""
             document.getElementById("Changetext").onclick = function(){
-                document.getElementById("target").innerHTML = document.getElementById("userinput").value;
+                textchange = document.getElementById("userinput").value;
+                document.getElementById("target").innerHTML = textchange;
             }
         </script>
     </body>
